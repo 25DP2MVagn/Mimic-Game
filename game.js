@@ -122,7 +122,7 @@ function showNextLine() {
 
             canAdvance = true;
 
-        }, 50);
+        }, 3000);
 
     }
 
