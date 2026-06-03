@@ -1,0 +1,298 @@
+body {
+    background:black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: 100vh;
+
+    margin: 0;
+
+}
+h1 {
+    color: lime;
+
+    font-family: monospace;
+
+    font-size: 70px
+}
+
+button {
+
+    background: black;
+
+    color: lime;
+
+    border: 1px solid lime;
+
+    padding: 25px 50px;
+
+    font-family: monospace;
+
+    cursor: pointer;
+
+    font-size: 30px;
+
+    transition: 0.5s;
+
+    
+}
+
+button:hover {
+
+    background: lime;
+
+    color: black;
+
+    transform: scale(1.1);
+}
+
+#intro-text {
+    color: lime;
+
+    font-family: monospace;
+
+    font-size: 30px;
+
+    margin-top: 40px;
+
+    width: 70%;
+
+    text-align: center;
+}
+
+.fade-in {
+
+    opacity: 0;
+
+    animation: fadeIn 3s forwards;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade-out {
+
+    animation: fadeOut 3s forwards;
+
+}
+
+@keyframes fadeOut {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+
+
+#power-container {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    height: 30px;
+
+    border: 2px solid lime;
+
+}
+
+#power-bar {
+
+    width: 100%;
+
+    height: 100%;
+
+    background: lime;
+
+}
+
+#power-text {
+
+    position: absolute;
+
+    top: 60px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: lime;
+
+    font-family: monospace;
+
+    font-size: 20px;
+
+}
+
+#power-container,
+#power-text {
+
+    opacity: 1;
+
+}
+
+#recharge-button {
+
+    position: absolute;
+
+    top: 100px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: black;
+
+    color: lime;
+
+    border: 1px solid lime;
+
+    padding: 10px 25px;
+
+    font-family: monospace;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+}
+
+#recharge-button:hover {
+
+    background: lime;
+
+    color: black;
+
+}
+
+#power-label {
+
+    position: absolute;
+
+    top: 0px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgb(230, 0, 0);
+
+    z-index: 100;
+
+    font-family: monospace;
+
+    font-size: 24px;
+
+}
+
+
+
+
+#ai-container {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 30px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+
+    height: 500px;
+
+    border: 2px solid lime;
+
+}
+
+#ai-bar {
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+
+    height: 0%;
+
+    background: lime;
+
+}
+
+#ai-text {
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: lime;
+
+    font-family: monospace;
+
+}
+
+#task-area {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.face {
+
+    width: 150px;
+
+    height: 150px;
+
+    cursor: pointer;
+
+    border: 2px solid lime;
+
+}
+
+.face:hover {
+
+    transform: scale(1.05);
+
+}
