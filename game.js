@@ -392,7 +392,7 @@ function checkAnswer(correct) {
 
     if(correct) {
 
-        aiProgress += 5;
+        aiProgress += 10;
 
         if(aiProgress > 100) {
 
